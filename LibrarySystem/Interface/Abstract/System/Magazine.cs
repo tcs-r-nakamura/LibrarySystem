@@ -1,7 +1,9 @@
 ﻿namespace LibrarySystem.Interface.Abstract.System
 {
-    class Magazine : LibraryItem
+   public class Magazine : LibraryItem
     {
-        //NOP
+        public Magazine(string? title, int id, string? author) : base(title, id, author)
+        {
+        }
     }
 }

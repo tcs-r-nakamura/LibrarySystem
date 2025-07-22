@@ -8,22 +8,14 @@ namespace LibrarySystem
     {
             public static void Main(string[] args)
         {
-            EBook ebook = new EBook
-            {
-                Title = "C#の教科書",
-                Author = "佐藤 太郎",
-                Id = 1
-            };
+            EBook ebook = new EBook("C#の教科書", 1, "佐藤 太郎");
+          
+       
             LibraryItemProcessor.Process(ebook);
 
             Console.WriteLine();
 
-            DVD dvd = new DVD
-            {
-                Title = "トップガン",
-                Author = "Tony Scott",
-                Id = 2
-            };
+            DVD dvd = new DVD("トップガン", 2, "Tony Scott");
             LibraryItemProcessor.Process(dvd);
         }
 
