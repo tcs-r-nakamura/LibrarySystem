@@ -1,4 +1,4 @@
-﻿using LibrarySystem.Interface.Abstract.System;
+﻿using LibrarySystem.Interfaces.Bases.Models;
 using LibrarySystem.LibraryService;
 
 namespace LibrarySystem
