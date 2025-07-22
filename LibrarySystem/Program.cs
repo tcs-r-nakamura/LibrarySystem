@@ -3,7 +3,9 @@ using LibrarySystem.LibraryService;
 
 namespace LibrarySystem
 {
-
+    /// <summary>
+    /// エントリーポイント
+    /// </summary>
     class Program
     {
             public static void Main(string[] args)
