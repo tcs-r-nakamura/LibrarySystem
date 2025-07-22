@@ -15,7 +15,7 @@
         /// <param name="title">タイトル</param>
         /// <param name="id">ID</param>
         /// <param name="author">著者</param>
-        public LibraryItem(string? title, int id, string? author)
+        public LibraryItem(string title, int id, string? author)
         {
             
             Title = title;
