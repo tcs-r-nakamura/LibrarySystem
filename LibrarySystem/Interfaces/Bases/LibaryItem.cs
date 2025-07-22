@@ -23,11 +23,17 @@
             Author = author;
         }
      
+        /// <summary>
+        /// 貸し出しメソッド
+        /// </summary>
         public void LendItem()
         {
             Console.WriteLine($"『{Title}』を貸し出します。");
         }
 
+        /// <summary>
+        /// 返却メソッド
+        /// </summary>
         public void ReturnItem()
         {
             Console.WriteLine($"『{Title}』を返却しました。");
