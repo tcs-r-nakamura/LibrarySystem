@@ -7,6 +7,12 @@ namespace LibrarySystem.Interfaces.Bases.Models
     /// </summary>
     public class EBook : Book, IDownloadable
     {
+        /// <summary>
+        /// コンストラクタ
+        /// </summary>
+        /// <param name="title">タイトル</param>
+        /// <param name="id">id</param>
+        /// <param name="author">著者</param>
         public EBook(string title, int id, string? author)
             : base(title, id, author)
         {

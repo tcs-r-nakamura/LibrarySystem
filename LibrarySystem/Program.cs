@@ -8,6 +8,10 @@ namespace LibrarySystem
     /// </summary>
     class Program
     {
+        /// <summary>
+        /// インスタンス生成
+        /// </summary>
+        /// <param name="args">未使用</param>
             public static void Main(string[] args)
         {
             EBook ebook = new EBook("C#の教科書", 1, "佐藤 太郎");
