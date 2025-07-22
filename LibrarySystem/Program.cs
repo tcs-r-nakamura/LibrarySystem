@@ -1,11 +1,12 @@
 ﻿using LibrarySystem.Interface.Abstract.System;
+using LibrarySystem.LibraryService;
 
 namespace LibrarySystem
 {
 
     class Program
     {
-        public static void Main(string[] args)
+            public static void Main(string[] args)
         {
             EBook ebook = new EBook
             {
@@ -13,9 +14,7 @@ namespace LibrarySystem
                 Author = "佐藤 太郎",
                 Id = 1
             };
-            ebook.LendItem();
-            ebook.Download();
-            ebook.ReturnItem();
+            LibraryItemProcessor.Process(ebook);
 
             Console.WriteLine();
 
@@ -25,9 +24,8 @@ namespace LibrarySystem
                 Author = "Tony Scott",
                 Id = 2
             };
-            dvd.LendItem();
-            dvd.Playback();
-            dvd.ReturnItem();
+            LibraryItemProcessor.Process(dvd);
         }
+
     }
 }

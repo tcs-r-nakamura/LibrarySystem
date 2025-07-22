@@ -1,11 +1,11 @@
 ﻿namespace LibrarySystem.Interface.Abstract.System
 {
-    class Book : LibraryItem
+    public class Book : LibraryItem
     {
         // NOP
     }
 
-    class EBook : Book, IDownloadable
+    public class EBook : Book, IDownloadable
     {
         public void Download()
         {

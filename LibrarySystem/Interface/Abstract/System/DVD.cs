@@ -1,6 +1,6 @@
 ﻿namespace LibrarySystem.Interface.Abstract.System
 {
-    class DVD : LibraryItem, IPlayable
+    public class DVD : LibraryItem, IPlayable
     {
         public void Playback()
         {
