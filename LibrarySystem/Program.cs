@@ -1,5 +1,6 @@
-﻿using LibrarySystem.Interfaces.Bases.Models;
+﻿using LibrarySystem.Bases.Models;
 using LibrarySystem.LibraryService;
+using LibrarySystem.LibraryServices;
 
 namespace LibrarySystem
 {
@@ -15,15 +16,17 @@ namespace LibrarySystem
             public static void Main(string[] args)
         {
             EBook ebook = new EBook("C#の教科書", 1, "佐藤 太郎");
-          
-       
-            LibraryItemProcessor.Process(ebook);
+            EBookManager.Process(ebook);
 
             Console.WriteLine();
 
             DVD dvd = new DVD("トップガン", 2, "Tony Scott");
-            LibraryItemProcessor.Process(dvd);
-        }
+            DVDManager.Process(dvd);
 
+            Console.WriteLine();
+
+            Magazine magazine = new Magazine("ワンピース", 3, "尾田 栄一郎");
+            MagazineManager.Process(magazine);
+        }
     }
 }
