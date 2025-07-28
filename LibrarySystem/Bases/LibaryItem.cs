@@ -2,7 +2,7 @@
 
 namespace LibrarySystem.Bases
 {
-    public abstract class LibraryItem : ILendable, IReturnable
+    public abstract class LibraryItem : ILendable, IReturnable ,ILibaryItem
     {
         /// <summary>
         /// プロパティ
